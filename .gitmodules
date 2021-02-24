@@ -1,0 +1,3 @@
+[submodule "submodules/grub2-themes"]
+	path = submodules/grub2-themes
+	url = https://github.com/vinceliuice/grub2-themes

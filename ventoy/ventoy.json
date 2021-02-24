@@ -1,0 +1,47 @@
+{
+  "theme": {
+    "file": "/ventoy/theme/vimix/theme.txt",
+    "gfxmode": "3840x2160",
+    "display_mode": "GUI",
+    "serial_param": "--unit=0 --speed=9600",
+    "ventoy_left": "5%",
+    "ventoy_top": "95%",
+    "ventoy_color": "#FFFFFF",
+    "fonts": [
+      "/ventoy/theme/vimix/terminus-12.pf2",
+      "/ventoy/theme/vimix/terminus-14.pf2",
+      "/ventoy/theme/vimix/terminus-16.pf2",
+      "/ventoy/theme/vimix/terminus-18.pf2"
+    ]
+  },
+  "menu_alias": [
+    {
+      "image": "/iso/ubuntu-20.04.2.0-desktop-amd64.iso",
+      "alias": "Ubuntu 20.04.2"
+    },
+    {
+      "image": "/iso/kali-linux-2020.4-live-amd64.iso",
+      "alias": "Kali Linux 2020.4"
+    }
+  ],
+  "menu_class": [
+    {
+      "key": "ubuntu",
+      "class": "ubuntu"
+    },
+    {
+      "key": "kali",
+      "class": "kali"
+    }
+  ],
+  "persistence": [
+    {
+      "image": "/iso/ubuntu-20.04.2.0-desktop-amd64.iso",
+      "backend": "/persistence/persistence_ext4_4GB_casper-rw.dat"
+    },
+    {
+      "image": "/iso/kali-linux-2020.4-live-amd64.iso",
+      "backend": "/persistence/persistence_ext4_4GB_persistence.dat"
+    }
+  ]
+}
