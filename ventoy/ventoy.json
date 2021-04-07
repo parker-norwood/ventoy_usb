@@ -22,6 +22,10 @@
     {
       "image": "/iso/kali-linux-2020.4-live-amd64.iso",
       "alias": "Kali Linux 2020.4"
+    },
+    {
+      "image": "/iso/windows-20H2-x64.iso",
+      "alias": "Windows 10 20H2 October 2020"
     }
   ],
   "menu_class": [
@@ -32,6 +36,10 @@
     {
       "key": "kali",
       "class": "kali"
+    },
+    {
+      "key": "windows",
+      "class": "windows"
     }
   ],
   "persistence": [
