@@ -24,8 +24,12 @@
       "alias": "Kali Linux 2020.4"
     },
     {
-      "image": "/iso/windows-20H2-x64.iso",
-      "alias": "Windows 10 20H2 October 2020"
+      "image": "/iso/windows-10-21H2-x64-19044.iso",
+      "alias": "Windows 10 21H2 November 2021"
+    },
+    {
+      "image": "/iso/windows-11-21H2-x64-22000.iso",
+      "alias": "Windows 11 21H2 October 2021"
     }
   ],
   "menu_class": [
@@ -51,5 +55,8 @@
       "image": "/iso/kali-linux-2020.4-live-amd64.iso",
       "backend": "/persistence/persistence_ext4_4GB_persistence.dat"
     }
+  ],
+  "control": [
+    { "VTOY_WIN11_BYPASS_CHECK": "1" }
   ]
 }
