@@ -17,9 +17,9 @@ terminal-border: "0"
 + boot_menu {
   left = 30%
   top = 30%
-  width = 45%
-  height = 60%
-  item_font = "DejaVu Regular 32"
+  width = 40%
+  height = 40%
+  item_font = "DejaVu Sans Regular 32"
   item_color = "#cccccc"
   selected_item_color = "#ffffff"
   icon_width = 64
@@ -31,21 +31,29 @@ terminal-border: "0"
   selected_item_pixmap_style = "select_*.png"
 }
 
++ image {
+  top = 100%-100
+  left = 50%-480
+  width = 960
+  height = 84
+  file = "info.png"
+}
+
 # Show a countdown message using the label component
 + label {
   top = 82%
   left = 32%
-  width = 30%
+  width = 36%
   align = "center"
   id = "__timeout__"
   text = "Booting in %d seconds"
   color = "#cccccc"
-  font = "DejaVu Regular 32"
+  font = "DejaVu Sans Regular 32"
 }
 
 + hbox{ 
-    left = 30%
-    top = 95%
+    left = 5%
+    top = 100%
     width = 10%
     height = 25
     + label {text = "@VTOY_HOTKEY_TIP@" color = "white" align = "left"} 

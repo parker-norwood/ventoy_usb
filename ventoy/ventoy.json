@@ -1,11 +1,7 @@
 {
   "theme": {
     "file": "/ventoy/theme/vimix/theme.txt",
-    "gfxmode": "3840x2160",
-    "display_mode": "GUI",
-    "serial_param": "--unit=0 --speed=9600",
-    "ventoy_left": "5%",
-    "ventoy_top": "95%",
+    "gfxmode": "max",
     "ventoy_color": "#FFFFFF",
     "fonts": [
       "/ventoy/theme/vimix/terminus-12.pf2",
@@ -16,8 +12,8 @@
   },
   "menu_alias": [
     {
-      "image": "/iso/ubuntu-20.04.2.0-desktop-amd64.iso",
-      "alias": "Ubuntu 20.04.2"
+      "image": "/iso/ubuntu-22.04-desktop-amd64.iso",
+      "alias": "Ubuntu 22.04"
     },
     {
       "image": "/iso/kali-linux-2020.4-live-amd64.iso",
@@ -28,8 +24,16 @@
       "alias": "Windows 10 21H2 November 2021"
     },
     {
-      "image": "/iso/windows-11-21H2-x64-22000.iso",
-      "alias": "Windows 11 21H2 October 2021"
+      "image": "/iso/windows-11-22H2-x64-22621.iso",
+      "alias": "Windows 11 22H2 September 2022"
+    },
+    {
+      "image": "/iso/chromeos_15437.61.0_reven_recovery_stable-channel_mp-v2.img",
+      "alias": "ChromeOS Flex 15437"
+    },
+    {
+      "image": "/iso/netboot.xyz.iso",
+      "alias": "netboot.xyz"
     }
   ],
   "menu_class": [
@@ -44,19 +48,24 @@
     {
       "key": "windows",
       "class": "windows"
+    },
+    {
+      "key": "chromeos",
+      "class": "brunch"
+    },
+    {
+      "key": "netboot",
+      "class": "driver"
     }
   ],
   "persistence": [
     {
       "image": "/iso/ubuntu-20.04.2.0-desktop-amd64.iso",
-      "backend": "/persistence/persistence_ext4_4GB_casper-rw.dat"
+      "backend": ["/persistence/persistence_ext4_4GB_casper-rw.dat"]
     },
     {
       "image": "/iso/kali-linux-2020.4-live-amd64.iso",
-      "backend": "/persistence/persistence_ext4_4GB_persistence.dat"
+      "backend": ["/persistence/persistence_ext4_4GB_persistence.dat"]
     }
-  ],
-  "control": [
-    { "VTOY_WIN11_BYPASS_CHECK": "1" }
   ]
 }
