@@ -12,28 +12,16 @@
   },
   "menu_alias": [
     {
-      "image": "/iso/ubuntu-22.04-desktop-amd64.iso",
-      "alias": "Ubuntu 22.04"
+      "image": "/iso/ubuntu-24.04-desktop-amd64.iso",
+      "alias": "Ubuntu 24.04"
     },
     {
-      "image": "/iso/kali-linux-2020.4-live-amd64.iso",
-      "alias": "Kali Linux 2020.4"
+      "image": "/iso/Win11_23H2_English_x64v2.iso",
+      "alias": "Windows 11 23H2"
     },
     {
-      "image": "/iso/windows-10-21H2-x64-19044.iso",
-      "alias": "Windows 10 21H2 November 2021"
-    },
-    {
-      "image": "/iso/windows-11-22H2-x64-22621.iso",
-      "alias": "Windows 11 22H2 September 2022"
-    },
-    {
-      "image": "/iso/chromeos_15437.61.0_reven_recovery_stable-channel_mp-v2.img",
-      "alias": "ChromeOS Flex 15437"
-    },
-    {
-      "image": "/iso/netboot.xyz.iso",
-      "alias": "netboot.xyz"
+      "image": "/iso/kali-linux-2024.1-live-amd64.iso",
+      "alias": "Kali Linux 2024.1"
     }
   ],
   "menu_class": [
@@ -46,7 +34,7 @@
       "class": "kali"
     },
     {
-      "key": "windows",
+      "key": "Win11",
       "class": "windows"
     },
     {
@@ -60,12 +48,21 @@
   ],
   "persistence": [
     {
-      "image": "/iso/ubuntu-20.04.2.0-desktop-amd64.iso",
+      "image": "/iso/ubuntu-24.04-desktop-amd64.iso",
       "backend": ["/persistence/persistence_ext4_4GB_casper-rw.dat"]
     },
     {
-      "image": "/iso/kali-linux-2020.4-live-amd64.iso",
+      "image": "/iso/kali-linux-2024.1-live-amd64.iso",
       "backend": ["/persistence/persistence_ext4_4GB_persistence.dat"]
     }
+  ],
+  "image_list": [
+    "/iso/ubuntu-24.04-desktop-amd64.iso",
+    "/iso/Win11_23H2_English_x64v2.iso",
+    "/iso/kali-linux-2024.1-live-amd64.iso"
+  ],
+  "control": [
+    { "VTOY_WIN11_BYPASS_CHECK": "1" },
+    { "VTOY_WIN11_BYPASS_NRO": "1"}
   ]
 }
